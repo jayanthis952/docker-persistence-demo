@@ -1,0 +1,22 @@
+cd ~/docker-persistence-demo
+chmod +x docker_persistence_demo.sh
+./docker_persistence_demo.sh
+
+
+✅ What this script does:
+
+Cleans any old demo_container.
+
+Prepares bind_data folder and initial file.
+
+Runs your Docker container with bind mount and Docker volume.
+
+Writes a test file to both /bind_data (bind mount) and /data_volume (volume).
+
+Deletes the container.
+
+Verifies that:
+
+Bind mount file exists on EC2 host.
+
+Volume file exists inside Docker volume using a temporary container.
