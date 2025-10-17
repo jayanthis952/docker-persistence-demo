@@ -78,6 +78,6 @@ Container Deleted
 └─────────────┘
 ________________________________________
 Notes
-•	Bind mounts store data on the host machine, so it persists even if the container is removed.
+•	Bind mounts store data on the host machine, so it persists even if the container is removed.                           
 •	Docker volumes are managed by Docker and also persist beyond container lifecycle.
 •	Any data created inside the container without a volume or bind mount will be lost when the container is deleted.
